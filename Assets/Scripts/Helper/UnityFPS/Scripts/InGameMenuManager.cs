@@ -50,6 +50,12 @@ public class InGameMenuManager : MonoBehaviour
         framerateToggle.onValueChanged.AddListener(OnFramerateCounterChanged);
     }
 
+
+    public void exitgame()
+    {
+        Application.Quit();
+    }
+
     private void Update()
     {
         // Lock cursor when clicking outside of menu
